@@ -1,0 +1,292 @@
+/* Basic Set-up */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 0 ;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: whitesmoke;
+}
+
+.top{
+    display: flex;
+    background-color: rgb(25, 27, 27);
+    justify-content: space-around;
+    height: 9vh;
+}
+
+.priority {
+    display: flex;
+    height: 70%;
+    width: 20%;
+    margin-top: 0.5%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(36, 35, 35);
+    border-radius: 3%;
+
+}
+
+.priority-i{
+    border-radius: 5%;
+    width: 15%;
+    height: 60%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+div[color="f8a593"]{
+    background-color: #f8a593;
+}
+
+div[color="ff7575"]{
+    background-color:#ff7575;
+}
+
+div[color="e17155"]{
+    background-color: #e17155;
+}
+
+div[color="d63030"]{
+    background-color: #d63030;
+}
+.add-delete{
+    display: flex;
+    height: 50%;
+    margin-top: 1.2%;
+    background-color: rgb(36, 35, 35);
+    justify-content: space-around;
+    width : 7%;
+}
+
+
+.fas.fa-plus.sign , .fas.fa-times.sign
+{
+    margin-top: 5%;
+    color: white;
+
+}
+
+.main-container{
+    height: 90vh;
+    padding: 0 5vw ;
+    padding-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.input-box{
+    
+    height: 80%;
+    width: 70%;
+    resize: none;
+    outline: none;
+    border: none;
+    text-align: left;
+    padding: 5% 0 0 5%;
+    
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    
+}
+
+.hit-priority{
+    left : 70%;
+    height: 100%;
+    width : 30%;
+    background-color: rgb(36, 35, 35);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+.priority-btn{
+    height: 13%;
+    width : 45%;
+   
+}
+
+.first-P{
+    background-color: #f8a593
+}
+.second-P{
+    background-color: #ff7575;
+}
+.third-P{
+    background-color: #e17155;
+}
+.fourth-P{
+    background-color: #d63030;
+}
+
+.modal-box{
+    display: flex;
+    border: 0.5px solid grey;
+    position: absolute;
+    top : 30%;
+    left : 25%;
+    height: 40%;
+    width: 50%;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.534)
+
+}
+
+.priority-selector-border{
+    border: white 1px solid;
+}
+
+
+/* Task */
+.task-container{
+    background-color: white;
+    height: 15rem;
+    width: 15rem;
+    border: 1px solid lightgrey;
+    border-radius: 2%;
+    overflow:hidden ;
+    box-shadow: 0 1rem 3rem rgba(105, 94, 94, 0.349);
+    margin-bottom: 2vh;
+    margin-right: 4vw;
+
+}
+
+.priority-line{
+    height: 5%;
+    width: 100%;
+}
+
+.task-id{
+    padding-left: 5%;
+}
+
+.task-description{
+    text-align: center;
+    overflow-wrap: break-word;
+    overflow:auto;
+    height: 70%;
+    /* So that new line character works in task description */
+    white-space:pre-wrap;
+}
+
+/* block ui */
+.block-ui{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.658);
+    top : 0px;
+    left : 0px;
+}
+
+/* Arraow CSS "https://codepen.io/zomgbre/pen/kmCsp" */
+/* Pretty Stuff? */
+
+
+  
+  .things > .content {
+    float: left;
+    width: 50%;
+    height: 500px;
+    -webkit-box-sizing: border-box; 
+      -moz-box-sizing: border-box;    
+      box-sizing: border-box;
+    position: relative;
+  }
+  
+  .things > .content h1 {
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    height: 150px;
+    color: #89323B;
+  }
+  
+  /* Arrow */
+  
+  .arrow {
+  	position: absolute;
+    top:0px;
+    left:70vw;
+    width: 100px;
+    
+  }
+  
+  .arrow .curve {
+      border: 6px solid #BE5F4B;
+      border-color: transparent transparent transparent #BE5F4B;
+      height: 200px;
+      width: 1200px;
+      border-radius: 230px 0 0 150px;
+  }
+  
+  .arrow .point {
+      position: absolute;
+      left: 30px;
+      top: 180px;
+  }
+  
+  .arrow .point:before, .arrow .point:after {
+      border: 3px solid #BE5F4B;
+      height: 25px;
+      content: "";
+      position: absolute;
+  }
+  
+  .arrow .point:before {
+      top: -11px;
+      left: -11px;
+      transform:rotate(-74deg);
+      -webkit-transform:rotate(-74deg);
+    -moz-transform:rotate(-74deg);
+    -ms-transform: rotate(-74deg);
+  }
+  
+  .arrow .point:after {
+    top: -20px;
+      left: 5px;
+      transform:rotate(12deg);
+      -webkit-transform: rotate(12deg);
+    -moz-transform:rotate(12deg);
+    -ms-transform: rotate(12deg);
+  }
+
+/* tutorial Class */
+.tutorial{
+    width: 27rem;
+    border: 1px solid black;
+    padding: 7px;
+    background-color: whitesmoke;
+    font-weight: 200;
+    line-height: 1.3rem;
+}
+
+.btn-area{
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.tutorial-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    height: 80%;
+    font-size: 1.1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700 ;
+    color:blue;
+    background-color: lightgray;
+}
